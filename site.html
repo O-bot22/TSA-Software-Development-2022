@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Time Tracker</title>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+<body>
+	<p>Welcome to Time Tracker. Here you can keep track of student's lab hours.</p>
+	<br>
+	<button id="get_all_data">Get complete time log</button>
+	
+	<div style="display: none" id="all-data-container">
+		<table border="2px">
+			<tbody>
+				<tr>
+					<th>date</th>
+					<th>student</th>
+					<th>duration</th>
+				</tr>
+			</tbody>
+			<tbody id="all-data-rows-container">
+			</tbody>
+		</table>
+	</div>
+
+	<!-- display stats for a specific student -->
+	<p>Get statistics for a student by ID number: <input id="id_num"></input><button id="get individual">search</button></p>
+
+	<div style="display: none" id="student-stats-container">
+	<table>
+	<tbody id="individual">
+		<tr>
+			<th>Date</th>
+			<th>duration</th>
+		</tr>
+	</tbody>
+	<tbody id="student-row-container"></tbody>
+	</table>
+	<p id="sum"></p>
+	</div>
+
+	<script src="socket.io/socket.io.js"></script>
+	<script src="script.js"></script>
+	</body>
+</html>

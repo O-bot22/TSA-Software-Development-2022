@@ -1,0 +1,22 @@
+body {
+	background-color: #BBFFBB;
+	color: black;
+	font-size: 20px;
+}
+
+button {
+	/*background: #330033;*/
+	background: #FFAAAA;
+	text-align: center;
+	padding: 3px 5px;
+	font-size: 15px;
+}
+
+table {	
+	border-collapse: collapse;
+}
+
+tr, th, td {
+	border: 1px solid;
+	border-color: #000055;
+}
